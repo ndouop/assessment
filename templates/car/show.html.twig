@@ -1,0 +1,60 @@
+{% extends 'baseList.html.twig' %}
+
+{% block title %}Car{% endblock %}
+
+{% block stylesheets %}
+	<style>
+        th {
+            width: 20% !important;
+        }
+		.custom-badge{
+			width: 100px !important;
+			height: 40px !important;
+		}
+	</style>
+{% endblock %}
+
+{% block body %}
+	<h1>{{ car.name }}</h1>
+
+	<div class="row">
+		<div class="col-sm-1"></div>
+		<div class="col-sm-10">
+			<table class="table">
+				<tbody>
+				<tr>
+					<th>Id</th>
+					<td>{{ car.id }}</td>
+				</tr>
+				<tr>
+					<th>Number of doors</th>
+					<td>{{ car.nbDoors }}</td>
+				</tr>
+				<tr>
+					<th>Number of seats</th>
+					<td>{{ car.nbSeats }}</td>
+				</tr>
+				<tr>
+					<th>Name</th>
+					<td>{{ car.name }}</td>
+				</tr>
+				<tr>
+					<th>Cost</th>
+					<td>{{ car.cost }}</td>
+				</tr>
+				<tr>
+					<th>Color</th>
+					<td>
+						{% set bgColor = car.color ? 'background-color:' ~ (car.color) : '' %}
+						<div class="custom-badge" style="{{ bgColor }}"></div>
+					</td>
+				</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+
+	<a href="{{ path('app_car_index') }}" class="btn btn-secondary float-start mt-3 mb-3">back to list</a>
+	<a href="{{ path('app_car_edit', {'id': car.id}) }}" class="btn btn-success float-end mt-3 mb-3">edit</a>
+
+{% endblock %}

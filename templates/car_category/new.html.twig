@@ -1,0 +1,12 @@
+{% extends 'baseList.html.twig' %}
+
+{% block title %}New Car category{% endblock %}
+
+{% block body %}
+    <h1>Create new CarCategory</h1>
+
+    {{ include('car_category/_form.html.twig') }}
+
+    <a href="{{ path('app_car_category_index') }}" class="btn btn-secondary float-end mt-3 mb-3">back to list</a>
+
+{% endblock %}

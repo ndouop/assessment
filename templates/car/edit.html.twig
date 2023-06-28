@@ -1,0 +1,11 @@
+{% extends 'baseList.html.twig' %}
+
+{% block title %}Edit {{ car.name }} | Car{% endblock %}
+
+{% block body %}
+    <h1>Edit Car {{ car.name }}</h1>
+
+    <hr>
+    {{ include('car/_form.html.twig', {'button_label': 'Update'}) }}
+
+{% endblock %}

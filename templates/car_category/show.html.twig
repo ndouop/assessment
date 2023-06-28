@@ -1,0 +1,17 @@
+{% extends 'baseList.html.twig' %}
+
+{% block title %}Detail of {{ car_category.name }} | Car category{% endblock %}
+
+{% block body %}
+    <h1>{{ car_category.name }}</h1>
+    <hr>
+    <p>
+        <strong>Id</strong> : {{ car_category.id }} <br>
+        <strong>Name</strong> : {{ car_category.name }}
+    </p>
+    <hr>
+    <a href="{{ path('app_car_category_index') }}" class="btn btn-secondary float-start mt-3 mb-3">back to list</a>
+    <a href="{{ path('app_car_category_edit', {'id': car_category.id}) }}" class="btn btn-success float-end mt-3 mb-3">edit</a>
+
+
+{% endblock %}

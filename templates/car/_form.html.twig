@@ -1,0 +1,39 @@
+{{ form_start(form) }}
+    <div class="row">
+        <div class="col-sm-3"></div>
+        <div class="col-sm-6">
+            <div class="form-group">
+                {{ form_label(form.category) }}
+                <select name="{{ field_name(form.category) }}" class="form-control">
+                    {% for label, value in field_choices(form.category) %}
+                        <option value="{{ value }}">{{ label }}</option>
+                    {% endfor %}
+                </select>
+            </div>
+            <div class="form-group mt-2">
+                {{ form_label(form.nbDoors, 'Number of doors') }}
+                {{ form_widget(form.nbDoors, {'attr': {'class': 'form-control'}}) }}
+            </div>
+            <div class="form-group mt-2">
+                {{ form_label(form.nbSeats, 'Number of seats') }}
+                {{ form_widget(form.nbSeats, {'attr': {'class': 'form-control'}}) }}
+            </div>
+            <div class="form-group mt-2">
+                {{ form_label(form.name, 'Name') }}
+                {{ form_widget(form.name, {'attr': {'class': 'form-control'}}) }}
+            </div>
+            <div class="form-group mt-2">
+                {{ form_label(form.cost, 'Cost') }}
+                {{ form_widget(form.cost, {'attr': {'class': 'form-control'}}) }}
+            </div>
+            <div class="form-group mt-2">
+                {{ form_label(form.color, 'Color') }}
+                {{ form_widget(form.color) }}
+            </div>
+            <button class="btn btn-success mt-3 mb-3">{{ button_label|default('Save') }}</button>
+            <a href="{{ path('app_car_index') }}" class="btn btn-secondary float-end mt-3 mb-3">back to list</a>
+
+        </div>
+        <div class="col-sm-3"></div>
+    </div>
+{{ form_end(form) }}

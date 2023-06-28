@@ -1,0 +1,10 @@
+{{ form_start(form) }}
+    {{ form_row(form.name, {
+        "label": "Car category name",
+        "required": true,
+        "attr": {
+            "class": "form-control",
+        }
+    }) }}
+    <button class="btn btn-success mt-3 mb-3">{{ button_label|default('Save') }}</button>
+{{ form_end(form) }}
