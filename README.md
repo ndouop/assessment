@@ -65,9 +65,9 @@ The home page is at
 ---
 ### Creenshot
 <p align="center">
-    <img src="https://raw.githubusercontent.com/ndouop/assessment/main/public/img/screen1.png" alt="Symfony Boilerplate" width="250" />
+    <img src="https://raw.githubusercontent.com/ndouop/assessment/main/public/img/screen1.png" alt="Symfony Boilerplate" width="75%" />
     <br />
-    <img src="https://raw.githubusercontent.com/ndouop/assessment/main/public/img/screen2.png" alt="Symfony Boilerplate" width="250" />
+    <img src="https://raw.githubusercontent.com/ndouop/assessment/main/public/img/screen2.png" alt="Symfony Boilerplate" width="75%" />
 </p>
 
 ### Run migration
