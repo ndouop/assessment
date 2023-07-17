@@ -63,7 +63,12 @@ The home page is at
 
 > http://127.0.0.1:8000/
 ---
-
+### Creenshot
+<p align="center">
+    <img src="https://drive.google.com/file/d/1SxyrwBrX5QXjbW75Fa12PrCN2heseulR/view?usp=drive_link" alt="local weather" width="75%" />
+    <br />
+    <img src="https://drive.google.com/file/d/14LBCqcTJ_1fCjDzrHlb7X6zNm7KLNcXH/view?usp=drive_link" alt="list of car" width="75%" />
+</p>
 ### Run migration
 Run the following commande for to migrate table to database
 ```
