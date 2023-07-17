@@ -65,10 +65,11 @@ The home page is at
 ---
 ### Creenshot
 <p align="center">
-    <img src="https://drive.google.com/file/d/1SxyrwBrX5QXjbW75Fa12PrCN2heseulR/view?usp=drive_link" alt="local weather" width="75%" />
+    ![alt text](https://github.com/ndouop/assessment/blob/main/public/img/screen1.png?raw=true)
     <br />
-    <img src="https://drive.google.com/file/d/14LBCqcTJ_1fCjDzrHlb7X6zNm7KLNcXH/view?usp=drive_link" alt="list of car" width="75%" />
+    ![alt text](https://github.com/ndouop/assessment/blob/main/public/img/screen2.png?raw=true)
 </p>
+
 ### Run migration
 Run the following commande for to migrate table to database
 ```
